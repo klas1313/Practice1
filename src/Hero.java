@@ -3,8 +3,8 @@
  */
 public class Hero extends CharacterCreator {
 
-    public Hero(String fname, String lname, char gender, String classType, int age, int swordFighting) {
-        super(fname, lname, gender, classType, age, swordFighting);
+    public Hero(String fname, String lname, char gender, String classType, int age) {
+        super(fname, lname, gender, classType, age); //Removed sword skill parameter.
     }
 
     public String doSomethingGood(String good) {

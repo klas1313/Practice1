@@ -1,7 +1,7 @@
 public class Villain extends CharacterCreator{
 
-    public Villain(String fname, String lname, char gender, String classType, int age, int swordFighting) {
-        super(fname, lname, gender, classType, age, swordFighting);
+    public Villain(String fname, String lname, char gender, String classType, int age) {
+        super(fname, lname, gender, classType, age); //Removed the sword skill parameter
     }
 
     public String evilActions(String evil){

@@ -30,20 +30,16 @@ public class Main {
 
         System.out.println("What is the minimum swordfighting value?");
         int min = sc.nextInt();
+        CharacterCreator.setMinSwordFighting(min); //similar to comment below for MAX
 
         System.out.println("What is the maximum swordfighting value?");
         int max = sc.nextInt();
+        CharacterCreator.setMaxSwordFighting(max);  //Added Static method, allowing the min and max to be set in the characterCreation Class.
 
-//        int min = rand.nextInt(50 - 25 + 1) + 25;
-//        int max = rand.nextInt(100 - 50 + 1) + 50;
-        //SwordRange swordRange = new SwordRange(100,100);
-        SwordRange.setRange(min,max);
-        int sr1 = SwordRange.getRange();
-        SwordRange.setRange(min,max);
-        int sr2 = SwordRange.getRange();
+        //Got rid of making the old code here
 
-        Villain evilOne = new Villain(fnameList.get(rand.nextInt(10)), lnameList.get(rand.nextInt(5)), 'M', "Evil Soldier", 30,sr1);
-        Hero goodKnight = new Hero(fnameList.get(rand.nextInt(10)),lnameList.get(rand.nextInt(5)),'M', "Paladin", 32,sr2);
+        Villain evilOne = new Villain(fnameList.get(rand.nextInt(10)), lnameList.get(rand.nextInt(5)), 'M', "Evil Soldier", 30);
+        Hero goodKnight = new Hero(fnameList.get(rand.nextInt(10)),lnameList.get(rand.nextInt(5)),'M', "Paladin", 32);
 
 
 
