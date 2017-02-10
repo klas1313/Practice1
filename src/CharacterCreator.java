@@ -12,6 +12,8 @@ public class CharacterCreator {
     public int mSwordFighting;
 
     public CharacterCreator(String fname, String lname, char gender, String classType, int age, int swordFighting){
+
+        //Here i Added some Comments to the Character Creator Class //Threatsignal
         mFirstName = fname;
         mLastName = lname;
         mGender = gender;
